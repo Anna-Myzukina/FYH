@@ -1,4 +1,4 @@
-# Project: Building Facebook clone
+# Final Capstone Project: Find Your House
 
 * DON'T PANIK if something wrong with your project you can reset chaqnges in branch using next commands
 ### The reset to undo changes. The clean to remove any untracked files and directories.
@@ -82,6 +82,19 @@ end
       $  bundle install
       $  bundle update
 
+## Getting started
+- [ ] To get started with the app, clone the repo and then install the needed gems:
+
+```
+$ bundle install --without production
+```
+
+- [ ] Next, migrate the database:
+
+```
+$ rails db:create
+```
+
 1. Cause we added bootstrap to Gemfile in next step we should create file and add bootstrap to our application
 
         touch app/assets/stylesheets/custom.scss
@@ -104,6 +117,8 @@ Inside this file app/assets/stylesheets/custom.scss add next code
 On this site https://fontawesome.com/?from=io you can choose any icons you want
 
 
+
+
 ## Users, houses, favourits
 
 I this project we Create models with associations and implement all requested features for users and posts. Add authentication with Devise as described in requirements.
@@ -111,3 +126,46 @@ I this project we Create models with associations and implement all requested fe
 rails generate scaffold User first_name:string last_name:string email:string password:string birthday:string gender:string
 
 rails db:migrate
+
+
+
+
+### Run tests
+
+Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rails db:migrate
+```
+
+## Run tests
+
+- [ ] If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+- [ ] Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rails generate rspec:install
+```
+
+```
+$ rspec
+```
+
+## Show your support
+
+- [ ] Give a ⭐️ if you like this project!
+
+## 📝 License
+
+* [ ] See [LICENSE.md]() for details.
+
+## Authors
+
+👤 **Author1**
+* GitHub: [Anna Muzykina](https://github.com/Anna-Myzukina)
+* LinkedIn: [Anna Muzykina](https://www.linkedin.com/in/anna-muzykina/)
+* email: anna.muzykina83@gmail.com
